@@ -118,7 +118,6 @@ namespace ConspiracaoCopy
                             {
                                 Console.WriteLine("[ {0} ] The file '{1}' already exists.", config.Title, fileNow);
                             }
-                            //throw;
                         }
                     }
                 });
