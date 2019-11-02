@@ -19,6 +19,7 @@
     public class ZipFolder
     {
         public bool Enable { get; set; }
+        public string ZipFileName { get; set; }
         public string SourcePath { get; set; }
         public string MoveToPath { get; set; }
     }

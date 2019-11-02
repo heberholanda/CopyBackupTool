@@ -10,7 +10,7 @@ namespace CopyBackup_Tool
         {
             var run = new Operations();
             var _Configs = new List<FileModel>();
-            _Configs = run.loadJson("C:\\ConspiracaoCopy\\ConfigurationFile.json");
+            _Configs = run.loadJson("C:\\CopyBackup_Tool\\ConfigurationFile.json");
 
             foreach (var config in _Configs)
             {

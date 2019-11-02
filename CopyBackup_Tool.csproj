@@ -14,6 +14,7 @@
   <ItemGroup>
     <PackageReference Include="Ionic.Zip" Version="1.9.1.8" />
     <PackageReference Include="Newtonsoft.Json" Version="12.0.2" />
+    <PackageReference Include="System.Security.Permissions" Version="4.6.0" />
   </ItemGroup>
 
 </Project>

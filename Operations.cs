@@ -4,7 +4,9 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Text;
 using System.Threading.Tasks;
+using System.Security.Permissions;
 
 namespace ConspiracaoCopy
 {
@@ -16,15 +18,18 @@ namespace ConspiracaoCopy
             {
                 using (StreamReader r = new StreamReader(cfgFile))
                 {
-                    Console.WriteLine("Load Configs.");
+                    Console.WriteLine("[ Config ] Loading...");
                     string json = r.ReadToEnd();
                     return JsonConvert.DeserializeObject<List<FileModel>>(json);
                 }
             }
-            catch (FileNotFoundException e)
+            catch (IOException e)
             {
-                Console.WriteLine("Configuration file not found!");
-                Console.WriteLine(e.Message);
+                if (e.HResult == -2147024816)
+                {
+                    Console.WriteLine("[ Config ] The file ConfigFile not found!");
+                    Console.WriteLine(e);
+                }
                 throw;
             }
             catch (Exception e)
@@ -32,22 +37,32 @@ namespace ConspiracaoCopy
                 Console.WriteLine(e.Message);
                 throw;
             }
+
         }
 
+        // https://archive.codeplex.com/?p=dotnetzip#Zip/ZipFile.cs
         public void zipFolder(ZipFolder backup)
         {
+            // Encode Type Set
+            EncodingProvider provider = System.Text.CodePagesEncodingProvider.Instance;
+            Encoding.RegisterProvider(provider);
+
             if (backup.Enable != true) return;
             try
             {
                 using (ZipFile zip = new ZipFile())
                 {
-                    zip.UseUnicodeAsNecessary = true;  // utf-8
+                    var dateNow = DateTime.Now.ToString("dd-MM-yyyy HH-mm");
                     zip.AddDirectory(@backup.SourcePath);
-                    zip.Comment = "This zip was created at " + System.DateTime.Now.ToString("G");
-                    zip.Save(@backup.MoveToPath);
+                    zip.Comment = "Created: " + dateNow;
+                    zip.Save(@backup.MoveToPath + "\\" + backup.ZipFileName + " - " + dateNow + ".zip");
                 }
             }
             catch (Ionic.Zip.ZipException e)
+            {
+                Console.WriteLine(e);
+            }
+            catch (System.IO.FileNotFoundException)
             {
 
             }
@@ -79,8 +94,8 @@ namespace ConspiracaoCopy
                     var check = config.Ignore.Folders.FirstOrDefault(x => x == folderNow);
                     if (String.IsNullOrEmpty(check))
                     {
-                        Console.WriteLine("[ {0} ] CreateDirectory  [ " + folderNow + " ]  ", config.Title);
                         Directory.CreateDirectory(dirPath.Replace(config.SourcePath, config.DestinationPath));
+                        Console.WriteLine("[ {0} ] CreateDirectory: {1}", config.Title, folderNow);
                     }
                 });
             }
@@ -111,6 +126,7 @@ namespace ConspiracaoCopy
                         try
                         {
                             File.Copy(newPath, newPath.Replace(config.SourcePath, config.DestinationPath));
+                            Console.WriteLine("[ {0} ] CopyFile: {1}", config.Title, fileNow);
                         }
                         catch (IOException e)
                         {
