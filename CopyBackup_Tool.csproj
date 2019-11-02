@@ -6,4 +6,10 @@
     <RootNamespace>CopyBackup_Tool</RootNamespace>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Folder Include="TESTE\Pasta1\Inside - Copia\" />
+    <Folder Include="TESTE\Pasta1\Inside\" />
+    <Folder Include="TESTE\Pasta2\Inside - Copia\" />
+  </ItemGroup>
+
 </Project>
