@@ -44,7 +44,7 @@ namespace ConspiracaoCopy
         public void zipFolder(ZipFolder backup)
         {
             // Encode Type Set
-            EncodingProvider provider = System.Text.CodePagesEncodingProvider.Instance;
+            EncodingProvider provider = CodePagesEncodingProvider.Instance;
             Encoding.RegisterProvider(provider);
 
             if (backup.Enable != true) return;

@@ -4,6 +4,13 @@
     <OutputType>Exe</OutputType>
     <TargetFramework>netcoreapp3.0</TargetFramework>
     <RootNamespace>CopyBackup_Tool</RootNamespace>
+    <ApplicationIcon>ProjectIcon.ico</ApplicationIcon>
+    <NoWin32Manifest>true</NoWin32Manifest>
+    <StartupObject>CopyBackup_Tool.Run</StartupObject>
+    <PackageProjectUrl>https://github.com/HeberPcL/CopyBackup_Tool</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/HeberPcL/CopyBackup_Tool</RepositoryUrl>
+    <Authors>Heber Holanda</Authors>
+    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
   </PropertyGroup>
 
   <ItemGroup>
@@ -15,6 +22,7 @@
     <PackageReference Include="Ionic.Zip" Version="1.9.1.8" />
     <PackageReference Include="Newtonsoft.Json" Version="12.0.2" />
     <PackageReference Include="System.Security.Permissions" Version="4.6.0" />
+    <PackageReference Include="System.Text.Encoding.CodePages" Version="4.6.0" />
   </ItemGroup>
 
 </Project>
