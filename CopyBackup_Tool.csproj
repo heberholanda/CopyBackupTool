@@ -9,7 +9,6 @@
   <ItemGroup>
     <Folder Include="TESTE\Pasta1\Another\" />
     <Folder Include="TESTE\Pasta1\Inside\" />
-    <Folder Include="TESTE\Pasta2\" />
   </ItemGroup>
 
   <ItemGroup>
