@@ -2,16 +2,6 @@
 ```
 Load Config in Json file.
 ```
-
-## Package Required
-
-	1. Microsoft.NETCore.App
-	2. System.Security.Permissions
-	3. System.Text.Encoding.CodePages
-	1. Ionic.Zip
-	2. Newtonsoft.Json
-
-
 ## Example Config
 ```
 [
@@ -40,3 +30,10 @@ Load Config in Json file.
   }
 ]
 ```
+## Package Required
+
+	1. Microsoft.NETCore.App
+	2. System.Security.Permissions
+	3. System.Text.Encoding.CodePages
+	1. Ionic.Zip
+	2. Newtonsoft.Json
