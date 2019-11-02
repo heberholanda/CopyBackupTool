@@ -14,10 +14,17 @@ namespace CopyBackup_Tool
 
             foreach (var config in _Configs)
             {
-                Console.WriteLine("\n[ {0} ] Starting...", config.Title);
-                run.zipFolder(config.Backup);
-                run.copyAllFiles(config);
-                Console.WriteLine("[ {0} ] Finished!\n", config.Title);
+                if (config.Enable)
+                {
+                    Console.WriteLine("\n[ {0} ] Starting...", config.Title);
+                    run.zipFolder(config.Backup);
+                    run.copyAllFiles(config);
+                    Console.WriteLine("[ {0} ] Finished!\n", config.Title);
+                } else
+                {
+                    Console.WriteLine("\n[ {0} ] Not run. Status: {1}", config.Title, config.Enable);
+                }
+
             }
 
             Console.WriteLine("My work is done!");
