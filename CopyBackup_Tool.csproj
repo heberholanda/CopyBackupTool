@@ -9,7 +9,12 @@
   <ItemGroup>
     <Folder Include="TESTE\Pasta1\Inside - Copia\" />
     <Folder Include="TESTE\Pasta1\Inside\" />
-    <Folder Include="TESTE\Pasta2\Inside - Copia\" />
+    <Folder Include="TESTE\Pasta2\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Ionic.Zip" Version="1.9.1.8" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.2" />
   </ItemGroup>
 
 </Project>
