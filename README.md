@@ -2,6 +2,16 @@
 ```
 Load Config in Json file.
 ```
+
+## Package Required
+
+	1. Microsoft.NETCore.App
+	2. System.Security.Permissions
+	3. System.Text.Encoding.CodePages
+	1. Ionic.Zip
+	2. Newtonsoft.Json
+
+
 ## Example Config
 ```
 [
@@ -53,3 +63,5 @@ Load Config in Json file.
   }
 ]
 ```
+## Compiling
+```Build your project and copy the configuration file "ConfigurationFile.json" so that it is next to the executable.```
