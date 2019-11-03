@@ -2,8 +2,8 @@
   {
     "Title": "Front",
     "Enable": "true",
-    "SourcePath": "C:\\CopyBackup_Tool\\TESTE\\Folder1",
-    "DestinationPath": "C:\\CopyBackup_Tool\\TESTE\\Folder2",
+    "SourcePath": "C:\\CopyBackup_Tool\\TEST\\Folder1",
+    "DestinationPath": "C:\\CopyBackup_Tool\\TEST\\Folder2",
     "Ignore": {
       "Folders": [
         "folder1",
@@ -18,16 +18,16 @@
     },
     "Backup": {
       "Enable": "true",
-      "ZipFileName":  "Front",
-      "SourcePath": "C:\\CopyBackup_Tool\\TESTE\\Folder1",
-      "MoveToPath": "C:\\CopyBackup_Tool\\TESTE"
+      "ZipFileName": "Front",
+      "SourcePath": "C:\\CopyBackup_Tool\\TEST\\Folder1",
+      "MoveToPath": "C:\\CopyBackup_Tool\\TEST"
     }
   },
   {
     "Title": "Back",
     "Enable": "false",
-    "SourcePath": "C:\\CopyBackup_Tool\\TESTE\\Folder1",
-    "DestinationPath": "C:\\CopyBackup_Tool\\TESTE\\Folder2",
+    "SourcePath": "C:\\CopyBackup_Tool\\TEST\\Folder1",
+    "DestinationPath": "C:\\CopyBackup_Tool\\TEST\\Folder2",
     "Ignore": {
       "Folders": [
         "folder1",
@@ -43,8 +43,8 @@
     "Backup": {
       "Enable": "true",
       "ZipFileName": "Back",
-      "SourcePath": "C:\\CopyBackup_Tool\\TESTE\\Folder1",
-      "MoveToPath": "C:\\CopyBackup_Tool\\TESTE"
+      "SourcePath": "C:\\CopyBackup_Tool\\TEST\\Folder1",
+      "MoveToPath": "C:\\CopyBackup_Tool\\TEST"
     }
   },
 ]

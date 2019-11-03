@@ -14,8 +14,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="TESTE\Folder1\Another\" />
-    <Folder Include="TESTE\Folder1\Inside\" />
+    <Folder Include="TEST\Folder1\Another\" />
+    <Folder Include="TEST\Folder1\Inside\" />
   </ItemGroup>
 
   <ItemGroup>
