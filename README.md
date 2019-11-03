@@ -37,3 +37,6 @@ Load Config in Json file.
 	3. System.Text.Encoding.CodePages
 	1. Ionic.Zip
 	2. Newtonsoft.Json
+
+## Compiling
+```Build your project and copy the configuration file "ConfigurationFile.json" so that it is next to the executable.```
