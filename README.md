@@ -8,8 +8,8 @@ Load Config in Json file.
   {
     "Title": "Front",
     "Enable": "true",
-    "SourcePath": "C:\\CopyBackup_Tool\\TESTE\\Pasta1",
-    "DestinationPath": "C:\\CopyBackup_Tool\\TESTE\\Pasta2",
+    "SourcePath": "C:\\CopyBackup_Tool\\TEST\\Folder1",
+    "DestinationPath": "C:\\CopyBackup_Tool\\TEST\\Folder2",
     "Ignore": {
       "Folders": [
         "folder1",
@@ -24,8 +24,31 @@ Load Config in Json file.
     },
     "Backup": {
       "Enable": "true",
-      "SourcePath": "C:\\CopyBackup_Tool\\TESTE\\Pasta1",
-      "MoveToPath": "C:\\CopyBackup_Tool\\TESTE"
+      "SourcePath": "C:\\CopyBackup_Tool\\TEST\\Folder1",
+      "MoveToPath": "C:\\CopyBackup_Tool\\TEST"
+    }
+  }
+  {
+    "Title": "Back",
+    "Enable": "true",
+    "SourcePath": "C:\\CopyBackup_Tool\\TEST\\Folder1",
+    "DestinationPath": "C:\\CopyBackup_Tool\\TEST\\Folder2",
+    "Ignore": {
+      "Folders": [
+        "folder1",
+        "folder2",
+        "folder3",
+        "Inside"
+      ],
+      "Files": [
+        "folder4/abc.txt",
+        "folder4/xzd.dll"
+      ]
+    },
+    "Backup": {
+      "Enable": "true",
+      "SourcePath": "C:\\CopyBackup_Tool\\TEST\\Folder1",
+      "MoveToPath": "C:\\CopyBackup_Tool\\TEST"
     }
   }
 ]
