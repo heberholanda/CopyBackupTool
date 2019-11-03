@@ -2,8 +2,8 @@
   {
     "Title": "Front",
     "Enable": "true",
-    "SourcePath": "C:\\CopyBackup_Tool\\TESTE\\Pasta1",
-    "DestinationPath": "C:\\CopyBackup_Tool\\TESTE\\Pasta2",
+    "SourcePath": "C:\\CopyBackup_Tool\\TESTE\\Folder1",
+    "DestinationPath": "C:\\CopyBackup_Tool\\TESTE\\Folder2",
     "Ignore": {
       "Folders": [
         "folder1",
@@ -19,15 +19,15 @@
     "Backup": {
       "Enable": "true",
       "ZipFileName":  "Front",
-      "SourcePath": "C:\\CopyBackup_Tool\\TESTE\\Pasta1",
+      "SourcePath": "C:\\CopyBackup_Tool\\TESTE\\Folder1",
       "MoveToPath": "C:\\CopyBackup_Tool\\TESTE"
     }
   },
   {
     "Title": "Back",
     "Enable": "false",
-    "SourcePath": "C:\\CopyBackup_Tool\\TESTE\\Pasta1",
-    "DestinationPath": "C:\\CopyBackup_Tool\\TESTE\\Pasta2",
+    "SourcePath": "C:\\CopyBackup_Tool\\TESTE\\Folder1",
+    "DestinationPath": "C:\\CopyBackup_Tool\\TESTE\\Folder2",
     "Ignore": {
       "Folders": [
         "folder1",
@@ -43,7 +43,7 @@
     "Backup": {
       "Enable": "true",
       "ZipFileName": "Back",
-      "SourcePath": "C:\\CopyBackup_Tool\\TESTE\\Pasta1",
+      "SourcePath": "C:\\CopyBackup_Tool\\TESTE\\Folder1",
       "MoveToPath": "C:\\CopyBackup_Tool\\TESTE"
     }
   },

@@ -18,7 +18,7 @@ Load Config in Json file.
   {
     "Title": "Front",
     "Enable": "true",
-    "SourcePath": "C:\\\\\\CopyBackup_Tool\\\\TESTE\\\\Pasta1",
+    "SourcePath": "C:\\CopyBackup_Tool\\TESTE\\Pasta1",
     "DestinationPath": "C:\\CopyBackup_Tool\\TESTE\\Pasta2",
     "Ignore": {
       "Folders": [
@@ -40,3 +40,5 @@ Load Config in Json file.
   }
 ]
 ```
+## Compiling
+```Build your project and copy the configuration file "ConfigurationFile.json" so that it is next to the executable.```

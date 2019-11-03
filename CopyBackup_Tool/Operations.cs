@@ -25,16 +25,15 @@ namespace ConspiracaoCopy
             }
             catch (IOException e)
             {
-                if (e.HResult == -2147024816)
-                {
-                    Console.WriteLine("[ Config ] The file ConfigFile not found!");
-                    Console.WriteLine(e);
-                }
+                Console.WriteLine("[ Config ] The file Config File not found!");
+                Console.WriteLine(e.Message);
+                Console.ReadKey();
                 throw;
             }
             catch (Exception e)
             {
                 Console.WriteLine(e.Message);
+                Console.ReadKey();
                 throw;
             }
 
@@ -60,7 +59,7 @@ namespace ConspiracaoCopy
             }
             catch (Ionic.Zip.ZipException e)
             {
-                Console.WriteLine(e);
+                Console.WriteLine(e.Message);
             }
             catch (System.IO.FileNotFoundException)
             {
@@ -68,7 +67,7 @@ namespace ConspiracaoCopy
             }
             catch (Exception e)
             {
-                Console.WriteLine(e);
+                Console.WriteLine(e.Message);
                 throw;
             }
         }
@@ -103,13 +102,13 @@ namespace ConspiracaoCopy
                 Console.WriteLine("[ {0} ] The folder already exists.", config.Title);
             }
             catch (ArgumentNullException e) {
-                Console.WriteLine("[ {0} ]" + e, config.Title);
+                Console.WriteLine("[ {0} ]" + e.Message, config.Title);
             }
             catch (ArgumentException e) {
-                Console.WriteLine("[ {0} ]" + e, config.Title);
+                Console.WriteLine("[ {0} ]" + e.Message, config.Title);
             }
             catch (Exception e) {
-                Console.WriteLine("[ {0} ]" + e, config.Title);
+                Console.WriteLine("[ {0} ]" + e.Message, config.Title);
                 throw;
             }
 
@@ -147,15 +146,15 @@ namespace ConspiracaoCopy
             }
             catch (ArgumentNullException e)
             {
-                Console.WriteLine("[ {0} ]" + e, config.Title);
+                Console.WriteLine("[ {0} ]" + e.Message, config.Title);
             }
             catch (ArgumentException e)
             {
-                Console.WriteLine("[ {0} ]" + e, config.Title);
+                Console.WriteLine("[ {0} ]" + e.Message, config.Title);
             }
             catch (Exception e)
             {
-                Console.WriteLine("[ {0} ]" + e, config.Title);
+                Console.WriteLine("[ {0} ]" + e.Message, config.Title);
                 throw;
             }
         }
