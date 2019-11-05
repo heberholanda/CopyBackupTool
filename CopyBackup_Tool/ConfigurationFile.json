@@ -1,6 +1,12 @@
 [
   {
     "Title": "Front",
+    "Backup": {
+      "Enable": "true",
+      "ZipFileName": "Front",
+      "SourcePath": "C:\\CopyBackup_Tool\\TEST\\Folder1",
+      "MoveToPath": "C:\\CopyBackup_Tool\\TEST"
+    },
     "Enable": "true",
     "SourcePath": "C:\\CopyBackup_Tool\\TEST\\Folder1",
     "DestinationPath": "C:\\CopyBackup_Tool\\TEST\\Folder2",
@@ -15,16 +21,16 @@
         "folder4/abc.txt",
         "folder4/xzd.dll"
       ]
-    },
-    "Backup": {
-      "Enable": "true",
-      "ZipFileName": "Front",
-      "SourcePath": "C:\\CopyBackup_Tool\\TEST\\Folder1",
-      "MoveToPath": "C:\\CopyBackup_Tool\\TEST"
     }
   },
   {
     "Title": "Back",
+    "Backup": {
+      "Enable": "true",
+      "ZipFileName": "Back",
+      "SourcePath": "C:\\CopyBackup_Tool\\TEST\\Folder1",
+      "MoveToPath": "C:\\CopyBackup_Tool\\TEST"
+    },
     "Enable": "false",
     "SourcePath": "C:\\CopyBackup_Tool\\TEST\\Folder1",
     "DestinationPath": "C:\\CopyBackup_Tool\\TEST\\Folder2",
@@ -39,12 +45,6 @@
         "folder4/abc.txt",
         "folder4/xzd.dll"
       ]
-    },
-    "Backup": {
-      "Enable": "true",
-      "ZipFileName": "Back",
-      "SourcePath": "C:\\CopyBackup_Tool\\TEST\\Folder1",
-      "MoveToPath": "C:\\CopyBackup_Tool\\TEST"
     }
   },
 ]
