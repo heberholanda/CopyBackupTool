@@ -1,0 +1,50 @@
+[
+  {
+    "Title": "Front",
+    "Status": "true",
+    "CompressFolder": {
+      "Status": "true",
+      "ZipFileName": "Front",
+      "SourcePath": "C:\\CopyBackupTool\\CopyBackupTool\\TEST\\Folder1",
+      "MoveToPath": "C:\\CopyBackupTool\\CopyBackupTool\\TEST",
+      "Ignore": {
+        "Folders": [],
+        "Files": [ "1 file.txt", "Another\\1 file.txt", "folder4/xzd.dll" ]
+      }
+    },
+    "CopyAndPaste": {
+      "Status": "true",
+      "Overwrite": "true",
+      "SourcePath": "C:\\CopyBackupTool\\CopyBackupTool\\TEST\\Folder1",
+      "DestinationPath": "C:\\CopyBackupTool\\CopyBackupTool\\TEST\\Folder2",
+      "Ignore": {
+        "Folders": [ "folder1", "folder2", "folder3", "Inside" ],
+        "Files": [ "folder4/abc.txt", "folder4/xzd.dll" ]
+      }
+    }
+  },
+  {
+    "Title": "Front2To",
+    "Status": "true",
+    "CompressFolder": {
+      "Status": "true",
+      "ZipFileName": "Front2To",
+      "SourcePath": "C:\\CopyBackupTool\\CopyBackupTool\\TEST\\Folder1",
+      "MoveToPath": "C:\\CopyBackupTool\\CopyBackupTool\\TEST",
+      "Ignore": {
+        "Folders": [],
+        "Files": [ "1 file.txt", "Another\\1 file.txt", "folder4/xzd.dll" ]
+      }
+    },
+    "CopyAndPaste": {
+      "Status": "true",
+      "Overwrite": "true",
+      "SourcePath": "C:\\CopyBackupTool\\CopyBackupTool\\TEST\\Folder1",
+      "DestinationPath": "C:\\CopyBackupTool\\CopyBackupTool\\TEST\\Folder3",
+      "Ignore": {
+        "Folders": [],
+        "Files": []
+      }
+    }
+  }
+]
