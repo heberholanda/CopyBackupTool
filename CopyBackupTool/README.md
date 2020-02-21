@@ -1,4 +1,5 @@
 # CopyBackup Tool - Move Files, Folders & Zip Folder
+### Beta 2.0
 
 ## Package Required
 
